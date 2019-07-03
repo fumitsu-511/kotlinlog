@@ -3,6 +3,7 @@ package otsuka.fumiya.techacademy.kotlinlog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log         //  追加
+import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,14 +11,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //整数型の変数をnumという名前で作成して、10を代入する。
-        var num = 10
-        Log.d("kotlintest",Integer.toString(num))
+        var num1 = 10 + 5 - 2 * 4 / 2
+        Log.d("kotlintest","10 + 5 - 2 * 4 / 2 = "+ num1)
 
-        //numに50を代入する
-        //変数や定数に .tostring() と記述する方法もある
-        num = 50
-        Log.d("kotlintest",num.toString())
+        val flag1 = true
+        val flag2 = false
+        Log.d("kotlintest","flag1 && flag2 = " + (flag1 && flag2))
+        Log.d("kotlintest", "flag1 || flag2 = " + (flag1 || flag2))
+
+        val num2 = 10
+        val num3 = 20
+        Log.d("kotlintest", "num < num3 = " + (num2 < num3))
 
     }
 }
