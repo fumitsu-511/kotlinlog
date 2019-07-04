@@ -2,7 +2,7 @@ package otsuka.fumiya.techacademy.kotlinlog
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log         //  追加
+import android.util.Log
 import kotlin.math.log
 
 class MainActivity : AppCompatActivity() {
