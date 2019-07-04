@@ -11,17 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var num1 = 10 + 5 - 2 * 4 / 2
-        Log.d("kotlintest","10 + 5 - 2 * 4 / 2 = "+ num1)
+        //humanインスタンスの作成
+        val human = Human("きらめき太郎", 30, "kotlin")
 
-        val flag1 = true
-        val flag2 = false
-        Log.d("kotlintest","flag1 && flag2 = " + (flag1 && flag2))
-        Log.d("kotlintest", "flag1 || flag2 = " + (flag1 || flag2))
+        //sayメソッドの呼び出し
+        human.say()
 
-        val num2 = 10
-        val num3 = 20
-        Log.d("kotlintest", "num < num3 = " + (num2 < num3))
+        //thinkメソッドの呼び出し
+        human.think()
 
     }
 }
