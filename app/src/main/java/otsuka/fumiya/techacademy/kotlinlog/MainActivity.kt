@@ -12,13 +12,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         //humanインスタンスの作成
-        val human = Human("きらめき太郎", 30, "kotlin")
+        val taro = Human("きらめき太郎", 30, "Kotlin")
+        val hanako = Human("きらめき花子",25,"Java")
 
-        //sayメソッドの呼び出し
-        human.say()
+        //太郎のsayメソッド、thinkメソッドの呼び出し
+        taro.say()
+        taro.think()
 
-        //thinkメソッドの呼び出し
-        human.think()
+        //花子のsayメソッド、thinkメソッドの呼び出し
+        hanako.say()
+        hanako.think()
+
 
     }
 }
